@@ -1,0 +1,41 @@
+.header{
+    text-align: center;
+}
+.header_logo{
+    padding: 25px 0 15px 0;
+    margin-bottom: 1px;
+    box-shadow: 0px 5px 5px #7c7a7a4d;
+}
+.header_position{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background-color: #7c7a7a23;
+    &--city{
+        font-size: 18px;
+    }
+}
+.header_banniere{   
+    padding: 50px 0;
+    background-color: #f7f7f7;
+    &--title{
+        width: 75%;
+        margin: auto;
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    &--subtitle{
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    &--btn{
+        font-size: 18px;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 50px;
+        border: 0;
+        background: linear-gradient($colour-secondary, $colour-primary);
+    }
+}
