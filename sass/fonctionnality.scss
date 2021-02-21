@@ -1,9 +1,11 @@
+@import "./utils/variables";
+
 @import "./base/minireset";
 @import "./base/base";
 @import "./base/typography";
 
-@import "./utils/variables";
-
 @import "./layout/header";
-@import "./layout/main";
 @import "./layout/footer";
+
+@import "./pages/home";
+@import "./pages/menu";

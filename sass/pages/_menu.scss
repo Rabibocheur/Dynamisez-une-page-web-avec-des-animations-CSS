@@ -1,0 +1,31 @@
+.main--background{
+    background-color: rgb(231, 231, 231);
+}
+.main--form{
+    padding-top: 30px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 50px 50px 0 0;
+    position: relative;
+    top: -70px;
+}
+.menu--title{
+    font-size: 26px;
+}
+.menu{
+    margin-top: 25px;
+
+    &--subtitle{
+
+    }
+    &_choix{
+        padding: 15px;
+        border-radius: 20px;
+        background-color: white;
+        margin-top: 10px;
+
+        & h3{
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+    }
+}

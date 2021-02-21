@@ -1,19 +1,28 @@
-.footer{
+.footer--background{
     background-color: rgba(41, 40, 40, 0.877);
+}
+.footer{
+    padding: 20px 0 30px 0;
+    color: white;
 
-    &_section{
-        padding: 20px 0 30px 0;
-        color: white;
+    &--title{
+        font-size: 20px;
+    }
+    &_ul{
+        margin-top: 20px;
+    }
+    &_li{
+        margin-top: 10px;
+        font-size: 16px;
+        position: relative;
 
-        & h2{
-            font-size: 20px;
+        &--ico{
+            position: absolute;
+            bottom: 2px;
+            font-size: 14px;
         }
-        & ul{
-            margin-top: 15px;
-        }
-        & li{
-            margin-top: 5px;
-            font-size: 18px;
+        &--title{
+            margin-left: 25px;
         }
     }
 }
