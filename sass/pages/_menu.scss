@@ -1,12 +1,32 @@
-.main--background {
+.header_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &--arrow {
+    font-size: 20px;
+    position: absolute;
+    left: 30px;
+  }
+}
+.restaurant--background {
   background-color: rgb(231, 231, 231);
 }
-.main--form {
+.restaurant--form {
   padding-top: 30px;
   background-color: rgb(231, 231, 231);
   border-radius: 50px 50px 0 0;
   position: relative;
   top: -70px;
+
+  display: flex;
+  flex-direction: column;
+}
+.restaurant--btn {
+  margin-top: 50px;
+  width: 200px;
+  align-self: center;
 }
 .menu--title {
   font-size: 26px;
@@ -19,7 +39,7 @@
       content: "";
       display: block;
       width: 40px;
-      height: 2px;
+      height: 3px;
       background-color: $colour-tertiary;
     }
   }

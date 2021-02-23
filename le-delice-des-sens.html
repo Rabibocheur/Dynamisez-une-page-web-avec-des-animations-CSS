@@ -1,100 +1,120 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/style.css">
-    <script src="https://kit.fontawesome.com/7a0f0d6266.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/7a0f0d6266.js"
+      crossorigin="anonymous"
+    ></script>
     <title>OhMyFood</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- HEADER -->
     <header class="header">
-        <div class="header_logo">
-            <img src="public/logo/ohmyfood.svg" alt="logo ohmyfood">
-        </div>
+      <div class="header_logo">
+        <a class="header_logo--arrow" href="index.html">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <img src="public/logo/ohmyfood.svg" alt="logo ohmyfood" />
+      </div>
     </header>
-    <div class="restaurant">
-        <img src="public/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
-    </div>
-    <main class="main--background">
-        <div class="main--form">
-            <div class="bloc">
-                <h1 class="menu--title">Le delice des sens</h1>
-                <section class="menu">
-                    <h2 class="menu--subtitle">ENTRÉES</h2>
-                    <div class="menu_choix">
-                        <h3>Tartare de thon</h3>
-                        <p>Assaisonné au yuzu</p>
-                    </div>
-                    <div class="menu_choix">
-                        <h3>Bouché de homard croustillant</h3>
-                        <p>Et sa farandole de petits légumes</p>
-                    </div>
-                    <div class="menu_choix">
-                        <h3>Velouté de cèpes</h3>
-                        <p>Aux truffes</p>
-                    </div>
-                </section>
-                <section class="menu">
-                    <h2 class="menu--subtitle">PLATS</h2>
-                    <div class="menu_choix">
-                        <h3>Poulet rôti aux herbes de provence</h3>
-                        <p>Et sa crème de truffe</p>
-                    </div>
-                    <div class="menu_choix">
-                        <h3>Langouste rôtie</h3>
-                        <p>Et ses légumes de saison</p>
-                    </div>
-                    <div class="menu_choix">
-                        <h3>Côte de boeuf angus</h3>
-                        <p>Et sa purée de panais</p>
-                    </div>
-                </section>
-                <section class="menu">
-                    <h2 class="menu--subtitle">DESSERTS</h2>
-                    <div class="menu_choix">
-                        <h3>Farandole de desserts</h3>
-                        <p>Du chef</p>
-                    </div>
-                    <div class="menu_choix">
-                        <h3>Crèmes brulée</h3>
-                        <p>Revisitée</p>
-                    </div>
-                    <div class="menu_choix">
-                        <h3>Tiramisu</h3>
-                        <p>A la noisette</p>
-                    </div>
-                </section>
-                <button class="main--btn btn">
-                    Commander
-                </button>
-            </div>
+    <!-- MAIN -->
+    <main class="restaurant">
+      <!-- IMG RESTAURANT -->
+      <div class="restaurant--img">
+        <img
+          src="public/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+          alt=""
+        />
+      </div>
+      <div class="restaurant--background">
+        <div class="restaurant--form">
+          <div class="bloc">
+            <h1 class="menu--title">Le delice des sens</h1>
+            <!-- ENTREE -->
+            <section class="menu">
+              <h2 class="menu--subtitle">ENTRÉES</h2>
+              <div class="menu_choix">
+                <h3 class="menu_choix--title">Tartare de thon</h3>
+                <p class="menu_choix--subtitle">Assaisonné au yuzu</p>
+              </div>
+              <div class="menu_choix">
+                <h3 class="menu_choix--title">Bouché de homard croustillant</h3>
+                <p class="menu_choix--subtitle">
+                  Et sa farandole de petits légumes
+                </p>
+              </div>
+              <div class="menu_choix">
+                <h3 class="menu_choix--title">Velouté de cèpes</h3>
+                <p class="menu_choix--subtitle">Aux truffes</p>
+              </div>
+            </section>
+            <!-- PLATS -->
+            <section class="menu">
+              <h2 class="menu--subtitle">PLATS</h2>
+              <div class="menu_choix">
+                <h3 class="menu_choix--title">
+                  Poulet rôti aux herbes de provence
+                </h3>
+                <p class="menu_choix--subtitle">Et sa crème de truffe</p>
+              </div>
+              <div class="menu_choix">
+                <h3 class="menu_choix--title">Langouste rôtie</h3>
+                <p class="menu_choix--subtitle">Et ses légumes de saison</p>
+              </div>
+              <div class="menu_choix">
+                <h3 class="menu_choix--title">Côte de boeuf angus</h3>
+                <p class="menu_choix--subtitle">Et sa purée de panais</p>
+              </div>
+            </section>
+            <!-- DESSERTS -->
+            <section class="menu">
+              <h2 class="menu--subtitle">DESSERTS</h2>
+              <div class="menu_choix">
+                <h3 class="menu_choix--title">Farandole de desserts</h3>
+                <p class="menu_choix--subtitle">Du chef</p>
+              </div>
+              <div class="menu_choix">
+                <h3 class="menu_choix--title">Crèmes brulée</h3>
+                <p class="menu_choix--subtitle">Revisitée</p>
+              </div>
+              <div class="menu_choix">
+                <h3 class="menu_choix--title">Tiramisu</h3>
+                <p class="menu_choix--subtitle">A la noisette</p>
+              </div>
+            </section>
+          </div>
+          <button class="restaurant--btn btn">Commander</button>
         </div>
+      </div>
     </main>
+    <!-- FOOTER -->
     <footer class="footer--background">
-        <section class="footer bloc">
-            <h2 class="footer--title">ohmyfood</h2>
-            <ul class="footer_ul">
-                <li class="footer_li">
-                    <span class="footer_li--ico"><i class="fas fa-utensils"></i></span>
-                    <p class="footer_li--title">Proposer un restaurant</p>
-                </li>
-                <li class="footer_li">
-                    <span class="footer_li--ico"><i class="fas fa-hands-helping"></i></span>
-                    <p class="footer_li--title">Devenir partenaire</p>
-                </li>
-                <li class="footer_li">
-                    <p>Mentions légales</p>
-                </li>
-                <li class="footer_li">
-                    <p>Contact</p>
-                </li>
-            </ul>
-        </section>
+      <section class="footer bloc">
+        <h2 class="footer--title">ohmyfood</h2>
+        <ul class="footer_ul">
+          <li class="footer_li">
+            <span class="footer_li--ico"><i class="fas fa-utensils"></i></span>
+            <p class="footer_li--title">Proposer un restaurant</p>
+          </li>
+          <li class="footer_li">
+            <span class="footer_li--ico"
+              ><i class="fas fa-hands-helping"></i
+            ></span>
+            <p class="footer_li--title">Devenir partenaire</p>
+          </li>
+          <li class="footer_li">
+            <p>Mentions légales</p>
+          </li>
+          <li class="footer_li">
+            <p>Contact</p>
+          </li>
+        </ul>
+      </section>
     </footer>
-</body>
-
+  </body>
 </html>

@@ -1,23 +1,18 @@
-
 body {
-    box-sizing: border-box;
-    max-width: 400px;
-    margin: auto;
+  box-sizing: border-box;
+  max-width: 400px;
+  margin: auto;
 }
-.bloc{
-    width: 90%;
-    margin: auto;
+.bloc {
+  width: 90%;
+  margin: auto;
 }
-.main{
-    &--background{
-        background-color: #f7f7f7;
-    }
+.btn {
+  font-size: 18px;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  box-shadow: 0px 10px 10px #7c7a7a4d;
+  border: 0;
+  background: linear-gradient($colour-secondary, $colour-primary);
 }
-.btn{
-        font-size: 18px;
-        color: white;
-        padding: 15px 30px;
-        border-radius: 50px;
-        border: 0;
-        background: linear-gradient($colour-secondary, $colour-primary);
-    }
