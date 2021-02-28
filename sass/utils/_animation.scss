@@ -1,0 +1,52 @@
+// ANIMATION MENU DEVOILEMENT
+@keyframes anim-menu{
+    from{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@for $i from 1 through 9 {
+    .anim-#{$i} {
+        animation: anim-menu;
+        animation-delay: #{$i / 3}s;
+        animation-duration: #{$i / 3}s;
+        animation-fill-mode: both;
+    }
+}
+
+// ANIMATION COEUR
+.heart:hover,
+.heart:hover:after,
+.heart:hover::before{
+    animation: heart 2s;
+    animation-fill-mode: both;
+}
+@keyframes heart{
+    from{
+        background-color: #FF79DA;
+        border: none;
+    }
+    to{
+        background-color: #9356DC;
+        border: none;
+    }
+}
+
+// ANIMATION LOADER
+@keyframes loader{
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes loader-bg{
+    100%{
+        opacity: 0;
+        z-index: -1;
+    }
+}

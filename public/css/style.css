@@ -1,1 +1,482 @@
-@import"https://fonts.googleapis.com/css2?family=Shrikhand&display=swap";@import"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap";html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}body{box-sizing:border-box;max-width:400px;margin:auto}.bloc{width:90%;margin:auto}.btn{font-size:18px;color:#fff;padding:15px 30px;border-radius:50px;box-shadow:0px 10px 10px #7c7a7a4d;border:0;background:linear-gradient(#FF79DA, #9356DC)}*{font-family:"Roboto",sans-serif}.home--title{font-size:24px;font-weight:500}.footer--title,.menu--title{font-family:"Shrikhand",sans-serif}a{text-decoration:none;color:#000}.menu--subtitle{font-weight:300}.header{text-align:center;background-color:#fff}.header_logo{padding:25px 0 15px 0;margin-bottom:1px;box-shadow:0px 5px 5px #7c7a7a4d}.header_logo img{transform:scale(0.8)}.footer--background{background-color:#353535}.footer{padding:20px 0 30px 0;color:#fff}.footer--title{font-size:20px}.footer_ul{margin-top:20px}.footer_li{margin-top:10px;font-size:16px;position:relative}.footer_li--ico{position:absolute;bottom:2px;font-size:14px}.footer_li--title{margin-left:25px}.position{display:flex;justify-content:center;padding:15px 0;background-color:#eaeaea}.position--city{font-size:18px;margin-left:20px}.presentation{padding:50px 0;background-color:#f6f6f6;text-align:center}.presentation--title{width:75%;margin:auto;font-size:26px;font-weight:500;margin-bottom:15px}.presentation--subtitle{font-size:20px;font-weight:300;margin-bottom:30px}.operation{display:flex;flex-direction:column;padding:50px 0}.operation_listings{list-style:none;counter-reset:compteListe;position:relative}.operation_listing{display:flex;justify-content:space-between;align-self:flex-end;background-color:#f7f7f7;padding:25px 50px;width:95%;border-radius:25px;margin-top:20px;box-shadow:0px 5px 10px #7c7a7a4d;font-weight:500}.operation_listing::before{counter-increment:compteListe 1;content:counter(compteListe) " ";background:#9356dc;height:1.5rem;width:1.5rem;border-radius:100px;display:flex;justify-content:center;align-items:center;color:#fff;position:absolute;left:-10px}.operation_listing--ico{position:absolute;left:40px;color:gray}.operation_listing--title{margin-left:30px}.restaurants--background{background-color:#f6f6f6}.restaurants{display:flex;flex-direction:column;padding:50px 0}.restaurants_menu{margin-top:20px;border-radius:15px;background-color:#fff;box-shadow:0px 2px 5px #7c7a7a4d}.restaurants_menu--img{object-fit:cover;width:100%;height:150px;border-radius:15px 15px 0 0}.restaurants_menu_desc{padding:15px}.restaurants_menu_desc--title{font-weight:600;font-size:18px;margin-bottom:3px}.restaurants_menu_desc--subtitle{font-weight:300}.header_logo{display:flex;align-items:center;justify-content:center;position:relative}.header_logo--arrow{font-size:20px;position:absolute;left:30px}.restaurant--background{background-color:#e7e7e7}.restaurant--form{padding-top:30px;background-color:#e7e7e7;border-radius:50px 50px 0 0;position:relative;top:-70px;display:flex;flex-direction:column}.restaurant--btn{margin-top:50px;width:200px;align-self:center}.menu--title{font-size:26px}.menu{margin-top:25px}.menu--subtitle::after{content:"";display:block;width:40px;height:3px;background-color:#99e2d0}.menu_choix{padding:10px;border-radius:20px;background-color:#fff;margin-top:15px}.menu_choix--title{font-weight:500;margin-bottom:5px}.menu_choix--subtitle{font-weight:300;font-size:14px}/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.home--title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.footer--title,
+.menu--title {
+  font-family: "Shrikhand", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu--subtitle {
+  font-weight: 300;
+}
+
+body {
+  box-sizing: border-box;
+  max-width: 400px;
+  margin: auto;
+}
+
+.bloc {
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  font-size: 18px;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  box-shadow: 0px 5px 5px #7c7a7a4d;
+  border: 0;
+  transition: all 0.3s;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+.btn:hover {
+  filter: brightness(1.1);
+  box-shadow: 0px 10px 10px #7c7a7a4d;
+}
+
+.loader-bg {
+  position: fixed;
+  top: 0;
+  width: 400px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  animation: loader-bg linear;
+  animation-duration: 0.1s;
+  animation-delay: 2.9s;
+  animation-fill-mode: both;
+}
+
+.loader-bg:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border: 5px solid transparent;
+  border-top-color: #FF79DA;
+  border-bottom-color: #99E2D0;
+  animation: loader linear;
+  animation-duration: 1s;
+  animation-iteration-count: 3;
+}
+
+.heart {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  margin-right: 25px;
+  transform: rotate(45deg) translate(10px, 10px);
+  cursor: pointer;
+  background-color: black;
+}
+
+.heart::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -50%;
+  left: 0;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.heart:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0%;
+  right: 50%;
+  border-radius: 50%;
+  background-color: black;
+}
+
+@keyframes anim-menu {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.anim-1 {
+  animation: anim-menu;
+  animation-delay: 0.3333333333s;
+  animation-duration: 0.3333333333s;
+  animation-fill-mode: both;
+}
+
+.anim-2 {
+  animation: anim-menu;
+  animation-delay: 0.6666666667s;
+  animation-duration: 0.6666666667s;
+  animation-fill-mode: both;
+}
+
+.anim-3 {
+  animation: anim-menu;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.anim-4 {
+  animation: anim-menu;
+  animation-delay: 1.3333333333s;
+  animation-duration: 1.3333333333s;
+  animation-fill-mode: both;
+}
+
+.anim-5 {
+  animation: anim-menu;
+  animation-delay: 1.6666666667s;
+  animation-duration: 1.6666666667s;
+  animation-fill-mode: both;
+}
+
+.anim-6 {
+  animation: anim-menu;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.anim-7 {
+  animation: anim-menu;
+  animation-delay: 2.3333333333s;
+  animation-duration: 2.3333333333s;
+  animation-fill-mode: both;
+}
+
+.anim-8 {
+  animation: anim-menu;
+  animation-delay: 2.6666666667s;
+  animation-duration: 2.6666666667s;
+  animation-fill-mode: both;
+}
+
+.anim-9 {
+  animation: anim-menu;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+.heart:hover,
+.heart:hover:after,
+.heart:hover::before {
+  animation: heart 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes heart {
+  from {
+    background-color: #FF79DA;
+    border: none;
+  }
+  to {
+    background-color: #9356DC;
+    border: none;
+  }
+}
+@keyframes loader {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes loader-bg {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+.header {
+  text-align: center;
+  background-color: white;
+}
+
+.header_logo {
+  padding: 25px 0 15px 0;
+  margin-bottom: 1px;
+  box-shadow: 0px 5px 5px #7c7a7a4d;
+}
+.header_logo img {
+  transform: scale(0.8);
+}
+
+.footer--background {
+  background-color: #353535;
+}
+
+.footer {
+  padding: 20px 0 30px 0;
+  color: white;
+}
+.footer--title {
+  font-size: 20px;
+}
+.footer_ul {
+  margin-top: 20px;
+}
+.footer_li {
+  margin-top: 10px;
+  font-size: 16px;
+  position: relative;
+}
+.footer_li--ico {
+  position: absolute;
+  bottom: 2px;
+  font-size: 14px;
+}
+.footer_li--title {
+  margin-left: 25px;
+}
+
+.position {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  background-color: #eaeaea;
+}
+.position--city {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.presentation {
+  padding: 50px 0;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+.presentation--title {
+  width: 75%;
+  margin: auto;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.presentation--subtitle {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.operation {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+.operation_listings {
+  list-style: none;
+  counter-reset: compteListe;
+  position: relative;
+}
+.operation_listing {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+  background-color: #f7f7f7;
+  padding: 25px 50px;
+  width: 95%;
+  border-radius: 25px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 10px #7c7a7a4d;
+  font-weight: 500;
+}
+.operation_listing::before {
+  counter-increment: compteListe 1;
+  content: counter(compteListe) " ";
+  background: #9356DC;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  left: -10px;
+}
+.operation_listing--ico {
+  position: absolute;
+  left: 40px;
+  color: #808080;
+}
+.operation_listing--title {
+  margin-left: 30px;
+}
+
+.restaurants--background {
+  background-color: #f6f6f6;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+.restaurants_menu {
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 2px 5px #7c7a7a4d;
+}
+.restaurants_menu--img {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants_menu_desc {
+  padding: 15px;
+  position: relative;
+}
+.restaurants_menu_desc--title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+.restaurants_menu_desc--subtitle {
+  font-weight: 300;
+}
+
+.heart-p {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.header_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.header_logo--arrow {
+  font-size: 20px;
+  position: absolute;
+  left: 30px;
+}
+
+.restaurant--background, .restaurant--form {
+  background-color: whitesmoke;
+}
+
+.restaurant--form {
+  padding-top: 30px;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  top: -70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant--btn {
+  margin-top: 50px;
+  width: 200px;
+  align-self: center;
+}
+
+.menu--title {
+  font-size: 26px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  margin-top: 25px;
+}
+.menu--subtitle::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+}
+.menu_choix {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+  margin-top: 15px;
+  box-shadow: 0px 3px 5px #e7e7e7;
+  display: hidden;
+}
+.menu_choix--title {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.menu_choix--subtitle {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */

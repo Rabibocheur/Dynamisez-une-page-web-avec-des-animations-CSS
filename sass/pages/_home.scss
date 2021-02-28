@@ -3,6 +3,7 @@
   justify-content: center;
   padding: 15px 0;
   background-color: #eaeaea;
+
   &--city {
     font-size: 18px;
     margin-left: 20px;
@@ -36,6 +37,7 @@
     counter-reset: compteListe;
     position: relative;
   }
+
   &_listing {
     display: flex;
     justify-content: space-between;
@@ -62,11 +64,13 @@
       position: absolute;
       left: -10px;
     }
+
     &--ico {
       position: absolute;
       left: 40px;
       color: #808080;
     }
+
     &--title {
       margin-left: 30px;
     }
@@ -92,17 +96,26 @@
       height: 150px;
       border-radius: 15px 15px 0 0;
     }
+
     &_desc {
       padding: 15px;
+      position: relative;
 
       &--title {
         font-weight: 600;
         font-size: 18px;
         margin-bottom: 3px;
       }
+      
       &--subtitle {
         font-weight: 300;
       }
     }
   }
+}
+
+.heart-p{
+  position: absolute;
+  right: 0;
+  top: 10px;
 }

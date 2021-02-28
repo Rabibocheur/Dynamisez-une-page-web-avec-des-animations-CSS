@@ -7,12 +7,20 @@ body {
   width: 90%;
   margin: auto;
 }
+
 .btn {
   font-size: 18px;
   color: white;
   padding: 15px 30px;
   border-radius: 50px;
-  box-shadow: 0px 10px 10px #7c7a7a4d;
+  box-shadow: 0px 5px 5px #7c7a7a4d;
   border: 0;
+  transition: all 0.3s;
   background: linear-gradient($colour-secondary, $colour-primary);
+
+  &:hover{
+    filter: brightness(1.1);
+    box-shadow: 0px 10px 10px #7c7a7a4d;
+  }
 }
+

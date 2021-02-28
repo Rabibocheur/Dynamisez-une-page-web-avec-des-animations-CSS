@@ -1,8 +1,11 @@
-@import "./utils/variables";
-
+@import "./base/variables";
 @import "./base/minireset";
-@import "./base/base";
 @import "./base/typography";
+@import "./base/base";
+
+@import "./utils/loader";
+@import "./utils/heart";
+@import "./utils/animation";
 
 @import "./layout/header";
 @import "./layout/footer";
