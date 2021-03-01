@@ -19,20 +19,26 @@
 }
 
 // ANIMATION COEUR
-.heart:hover,
-.heart:hover:after,
-.heart:hover::before{
-    animation: heart 2s;
+.heart-anim:hover,
+.heart-anim:hover::after,
+.heart-anim:hover::before{
+    animation: heart 0.4s;
     animation-fill-mode: both;
+}
+.heart-anim:hover::after{
+    animation-delay: 0.2s;
+}
+.heart-anim:hover::before{
+    animation-delay: 0.4s;
 }
 @keyframes heart{
     from{
-        background-color: #FF79DA;
-        border: none;
+
+        opacity: 0;
     }
     to{
         background-color: #9356DC;
-        border: none;
+        opacity: 1;
     }
 }
 
@@ -45,6 +51,10 @@
     }
 }
 @keyframes loader-bg{
+    0%{
+        opacity: 1;
+        z-index: 1;
+    }
     100%{
         opacity: 0;
         z-index: -1;

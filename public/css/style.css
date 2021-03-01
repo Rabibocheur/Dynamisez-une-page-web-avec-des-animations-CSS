@@ -101,8 +101,8 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
   animation: loader-bg linear;
-  animation-duration: 0.1s;
-  animation-delay: 2.9s;
+  animation-duration: 0.4s;
+  animation-delay: 1.9s;
   animation-fill-mode: both;
 }
 
@@ -110,8 +110,8 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: 35%;
-  left: 35%;
+  top: 40%;
+  left: 40%;
   width: 100px;
   height: 100px;
   border-radius: 100px;
@@ -120,39 +120,46 @@ body {
   border-bottom-color: #99E2D0;
   animation: loader linear;
   animation-duration: 1s;
-  animation-iteration-count: 3;
+  animation-iteration-count: 2;
 }
 
 .heart {
-  position: relative;
-  width: 15px;
-  height: 15px;
-  margin-right: 25px;
-  transform: rotate(45deg) translate(10px, 10px);
-  cursor: pointer;
-  background-color: black;
+  display: flex;
+  align-items: center;
 }
 
-.heart::before {
+.heart-ico {
+  font-size: 26px;
+}
+
+.heart-anim {
+  position: relative;
+  left: -19px;
+  top: 1px;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.heart-anim::before {
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
-  top: -50%;
+  top: -55%;
   left: 0;
   border-radius: 50%;
-  background-color: black;
 }
 
-.heart:after {
+.heart-anim:after {
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
   bottom: 0%;
-  right: 50%;
+  right: 55%;
   border-radius: 50%;
-  background-color: black;
 }
 
 @keyframes anim-menu {
@@ -228,21 +235,28 @@ body {
   animation-fill-mode: both;
 }
 
-.heart:hover,
-.heart:hover:after,
-.heart:hover::before {
-  animation: heart 2s;
+.heart-anim:hover,
+.heart-anim:hover::after,
+.heart-anim:hover::before {
+  animation: heart 0.4s;
   animation-fill-mode: both;
+}
+
+.heart-anim:hover::after {
+  animation-delay: 0.2s;
+}
+
+.heart-anim:hover::before {
+  animation-delay: 0.4s;
 }
 
 @keyframes heart {
   from {
-    background-color: #FF79DA;
-    border: none;
+    opacity: 0;
   }
   to {
     background-color: #9356DC;
-    border: none;
+    opacity: 1;
   }
 }
 @keyframes loader {
@@ -254,6 +268,10 @@ body {
   }
 }
 @keyframes loader-bg {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
   100% {
     opacity: 0;
     z-index: -1;
@@ -463,20 +481,55 @@ body {
   background-color: #99E2D0;
 }
 .menu_choix {
+  display: flex;
+  justify-content: space-between;
   padding: 10px;
   border-radius: 20px;
   background-color: white;
   margin-top: 15px;
   box-shadow: 0px 3px 5px #e7e7e7;
   display: hidden;
+  overflow: hidden;
+}
+.menu_choix--bloc {
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu_choix--title {
   font-weight: 500;
   margin-bottom: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu_choix--subtitle {
   font-weight: 300;
   font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu_choix--anim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  margin: -10px;
+  margin-left: 0;
+  margin-right: -80px;
+  background-color: #99E2D0;
+  transition: 0.5s;
+  border-radius: 0 20px 20px 0;
+}
+.menu_choix--check {
+  font-size: 25px;
+  transform: rotate(180deg);
+  transition: 0.5s;
+  color: white;
+}
+.menu_choix:hover .menu_choix--anim {
+  margin-right: -10px;
+}
+.menu_choix:hover .menu_choix--check {
+  transform: rotate(0);
 }
 
 /*# sourceMappingURL=style.css.map */

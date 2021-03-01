@@ -50,20 +50,56 @@
     }
   }
   &_choix {
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
     border-radius: 20px;
     background-color: white;
     margin-top: 15px;
     box-shadow: 0px 3px 5px rgb(231, 231, 231);
     display: hidden;
+    overflow: hidden;
 
+    &--bloc{
+      overflow: hidden;
+      white-space: nowrap;
+    }
     &--title {
       font-weight: 500;
       margin-bottom: 5px;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
     &--subtitle {
       font-weight: 300;
       font-size: 14px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    
+    &--anim{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      margin: -10px;
+      margin-left: 0;
+      margin-right: -80px;
+      background-color: $colour-tertiary;
+      transition: .5s;
+      border-radius: 0 20px 20px 0;
+    }
+    &--check{
+      font-size: 25px;
+      transform: rotate(180deg);
+      transition: .5s;
+      color: white;
+    }
+    &:hover &--anim{
+      margin-right: -10px;
+    }
+    &:hover &--check{
+      transform: rotate(0);
     }
   }
 }
