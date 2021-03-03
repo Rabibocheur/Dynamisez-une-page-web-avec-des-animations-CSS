@@ -1,11 +1,13 @@
-@import "./base/variables";
 @import "./base/minireset";
 @import "./base/typography";
 @import "./base/base";
 
-@import "./utils/loader";
-@import "./utils/heart";
-@import "./utils/animation";
+@import "./utils/variables";
+@import "./utils/animations";
+
+@import "./components/loader";
+@import "./components/heart";
+@import "./components/button";
 
 @import "./layout/header";
 @import "./layout/footer";

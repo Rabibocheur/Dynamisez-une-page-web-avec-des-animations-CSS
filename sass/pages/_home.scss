@@ -1,11 +1,10 @@
 .position {
-  display: flex;
-  justify-content: center;
+  @extend %flex-center;
   padding: 15px 0;
   background-color: #eaeaea;
 
   &--city {
-    font-size: 18px;
+    @include font($s: 18px, $w: 400);
     margin-left: 20px;
   }
 }
@@ -15,15 +14,13 @@
   text-align: center;
 
   &--title {
+    @include font($s: 26px, $w: 500);
     width: 75%;
     margin: auto;
-    font-size: 26px;
-    font-weight: 500;
     margin-bottom: 15px;
   }
   &--subtitle {
-    font-size: 20px;
-    font-weight: 300;
+    @include font($s: 20px, $w: 300);
     margin-bottom: 30px;
   }
 }
@@ -31,38 +28,39 @@
   display: flex;
   flex-direction: column;
   padding: 50px 0;
+  counter-reset: compteListe;
 
   &_listings {
-    list-style: none;
-    counter-reset: compteListe;
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
   }
-
   &_listing {
+    @include font($s: 16px, $w: 500);
     display: flex;
     justify-content: space-between;
-    align-self: flex-end;
     background-color: #f7f7f7;
     padding: 25px 50px;
-    width: 95%;
+    padding-right: 0;
+    width: 100%;
     border-radius: 25px;
     margin-top: 20px;
     box-shadow: 0px 5px 10px #7c7a7a4d;
-    font-weight: 500;
+    position: relative;
 
     &::before {
-      counter-increment: compteListe 1;
-      content: counter(compteListe) " ";
+      @extend %flex-center;
       background: $colour-primary;
       height: 1.5rem;
       width: 1.5rem;
       border-radius: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       color: white;
+
       position: absolute;
       left: -10px;
+
+      counter-increment: compteListe 1;
+      content: counter(compteListe) " ";
     }
 
     &--ico {
@@ -76,12 +74,40 @@
     }
   }
 }
+.listing_active {
+  background-color: #9256dc18;
+
+  &-ico {
+    color: $colour-primary;
+  }
+}
+@media screen and (min-width: 450px) {
+  .operation {
+    &_listings {
+      justify-content: center;
+    }
+    &_listing {
+      width: 70%;
+    }
+  }
+}
+@media screen and (min-width: 1000px) {
+  .operation {
+    &_listings {
+      justify-content: space-between;
+    }
+    &_listing {
+      width: 30%;
+    }
+  }
+}
 .restaurants--background {
   background-color: #f6f6f6;
 }
 .restaurants {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 50px 0;
 
   &_menu {
@@ -89,6 +115,7 @@
     border-radius: 15px;
     background-color: white;
     box-shadow: 0px 2px 5px #7c7a7a4d;
+    width: 100%;
 
     &--img {
       object-fit: cover;
@@ -102,19 +129,30 @@
       position: relative;
 
       &--title {
-        font-weight: 600;
-        font-size: 18px;
+        @include font($s: 18px, $w: 600);
         margin-bottom: 3px;
       }
-      
+
       &--subtitle {
-        font-weight: 300;
+        @include font($s: 16px, $w: 300);
       }
     }
   }
 }
-
-.heart-p{
+@media screen and (min-width: 600px) {
+  .restaurants--title {
+    width: 100%;
+  }
+  .restaurants_menu {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .restaurants_menu--img {
+    height: 200px;
+  }
+}
+.heart-p {
   position: absolute;
   right: 0;
   top: 10px;

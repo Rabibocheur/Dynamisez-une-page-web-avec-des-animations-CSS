@@ -1,13 +1,26 @@
-.header{
-    text-align: center;
-    background-color: white;
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+  background-color: white;
 }
-.header_logo{
-    padding: 25px 0 15px 0;
-    margin-bottom: 1px;
-    box-shadow: 0px 5px 5px #7c7a7a4d;
+.header_logo {
+  padding: 15px 0 15px 0;
+  margin-bottom: 1px;
+  box-shadow: 0px 5px 5px #7c7a7a4d;
 
-    & img{
-        transform: scale(0.8);
-    }
+  & img {
+    transform: scale(0.8);
+  }
+}
+.header_logo {
+  @extend %flex-center;
+  position: relative;
+
+  &--arrow {
+    font-size: 20px;
+    position: absolute;
+    left: 30px;
+  }
 }

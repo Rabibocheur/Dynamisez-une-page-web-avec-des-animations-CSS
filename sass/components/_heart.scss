@@ -1,0 +1,23 @@
+.heart {
+  @extend %flex-center;
+}
+.heart-ico {
+  font-size: 26px;
+}
+.heart-anim {
+  position: relative;
+  left: -19px;
+  top: 1px;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.heart-anim::before {
+  @include pseudo-element($t: -55%);
+  border-radius: 50%;
+}
+.heart-anim:after {
+  @include pseudo-element($l: -50%);
+  border-radius: 50%;
+}

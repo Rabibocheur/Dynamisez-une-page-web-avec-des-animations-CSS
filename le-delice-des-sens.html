@@ -1,164 +1,182 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/7a0f0d6266.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>OhMyFood</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="public/css/style.css" />
-  <script src="https://kit.fontawesome.com/7a0f0d6266.js" crossorigin="anonymous"></script>
-  <title>OhMyFood</title>
-</head>
-
-<body>
-  <!-- HEADER -->
-  <header class="header">
-    <div class="header_logo">
-      <a class="header_logo--arrow" href="index.html">
-        <i class="fas fa-arrow-left"></i>
-      </a>
-      <img src="public/logo/ohmyfood.svg" alt="logo ohmyfood" />
-    </div>
-  </header>
-  <!-- MAIN -->
-  <main class="restaurant">
-    <!-- IMG RESTAURANT -->
-    <div class="restaurant--img">
-      <img src="public/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" />
-    </div>
-    <div class="restaurant--background">
-      <div class="restaurant--form">
-        <div class="bloc">
-          <h1 class="menu--title">Le delice des sens
-            <div class="heart">
-              <i class="far fa-heart"></i>
-              <div class="heart-anim"></div>
-            </div>
-          </h1>
-          <!-- ENTREE -->
-          <section class="menu">
-            <h2 class="menu--subtitle">ENTRÉES</h2>
-            <div class="menu_choix anim-1">
-              <div class="menu_choix--bloc">
-                <h3 class="menu_choix--title">Tartare de thon</h3>
-                <p class="menu_choix--subtitle">Assaisonné au yuzu</p>
-              </div>
-              <div class="menu_choix--anim">
-                <i class="menu_choix--check fas fa-check-circle"></i>
-              </div>
-            </div>
-            <div class="menu_choix anim-2">
-              <div class="menu_choix--bloc">
-                <h3 class="menu_choix--title">Bouché de homard croustillant</h3>
-                <p class="menu_choix--subtitle">
-                  Et sa farandole de petits légumes
-                </p>
-              </div>
-              <div class="menu_choix--anim">
-                <i class="menu_choix--check fas fa-check-circle"></i>
-              </div>
-            </div>
-            <div class="menu_choix anim-3">
-              <div class="menu_choix--bloc">
-                <h3 class="menu_choix--title">Velouté de cèpes</h3>
-                <p class="menu_choix--subtitle">Aux truffes</p>
-              </div>
-              <div class="menu_choix--anim">
-                <i class="menu_choix--check fas fa-check-circle"></i>
-              </div>
-            </div>
-          </section>
-          <!-- PLATS -->
-          <section class="menu">
-            <h2 class="menu--subtitle">PLATS</h2>
-            <div class="menu_choix anim-4">
-              <div class="menu_choix--bloc">
-                <h3 class="menu_choix--title">
-                  Poulet rôti aux herbes de provence
-                </h3>
-                <p class="menu_choix--subtitle">Et sa crème de truffe</p>
-              </div>
-              <div class="menu_choix--anim">
-                <i class="menu_choix--check fas fa-check-circle"></i>
-              </div>
-            </div>
-            <div class="menu_choix anim-5">
-              <div class="menu_choix--bloc">
-                <h3 class="menu_choix--title">Langouste rôtie</h3>
-                <p class="menu_choix--subtitle">Et ses légumes de saison</p>
-              </div>
-              <div class="menu_choix--anim">
-                <i class="menu_choix--check fas fa-check-circle"></i>
-              </div>
-            </div>
-            <div class="menu_choix anim-6">
-              <div class="menu_choix--bloc">
-                <h3 class="menu_choix--title">Côte de boeuf angus</h3>
-                <p class="menu_choix--subtitle">Et sa purée de panais</p>
-              </div>
-              <div class="menu_choix--anim">
-                <i class="menu_choix--check fas fa-check-circle"></i>
-              </div>
-            </div>
-          </section>
-          <!-- DESSERTS -->
-          <section class="menu">
-            <h2 class="menu--subtitle">DESSERTS</h2>
-            <div class="menu_choix anim-7">
-              <div class="menu_choix--bloc">
-                <h3 class="menu_choix--title">Farandole de desserts</h3>
-                <p class="menu_choix--subtitle">Du chef</p>
-              </div>
-              <div class="menu_choix--anim">
-                <i class="menu_choix--check fas fa-check-circle"></i>
-              </div>
-            </div>
-            <div class="menu_choix anim-8">
-              <div class="menu_choix--bloc">
-                <h3 class="menu_choix--title">Crèmes brulée</h3>
-                <p class="menu_choix--subtitle">Revisitée</p>
-              </div>
-              <div class="menu_choix--anim">
-                <i class="menu_choix--check fas fa-check-circle"></i>
-              </div>
-            </div>
-            <div class="menu_choix anim-9">
-              <div class="menu_choix--bloc">
-                <h3 class="menu_choix--title">Tiramisu</h3>
-                <p class="menu_choix--subtitle">A la noisette</p>
-              </div>
-              <div class="menu_choix--anim">
-                <i class="menu_choix--check fas fa-check-circle"></i>
-              </div>
-            </div>
-          </section>
-        </div>
-        <button class="restaurant--btn btn">Commander</button>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header_logo">
+        <a class="header_logo--arrow" href="index.html">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <img src="public/logo/ohmyfood.svg" alt="logo ohmyfood" />
       </div>
-    </div>
-  </main>
-  <!-- FOOTER -->
-  <footer class="footer--background">
-    <section class="footer bloc">
-      <h2 class="footer--title">ohmyfood</h2>
-      <ul class="footer_ul">
-        <li class="footer_li">
-          <span class="footer_li--ico"><i class="fas fa-utensils"></i></span>
-          <p class="footer_li--title">Proposer un restaurant</p>
-        </li>
-        <li class="footer_li">
-          <span class="footer_li--ico"><i class="fas fa-hands-helping"></i></span>
-          <p class="footer_li--title">Devenir partenaire</p>
-        </li>
-        <li class="footer_li">
-          <p>Mentions légales</p>
-        </li>
-        <li class="footer_li">
-          <p>Contact</p>
-        </li>
-      </ul>
-    </section>
-  </footer>
-</body>
-
+    </header>
+    <!-- MAIN -->
+    <main class="restaurant">
+      <!-- IMG RESTAURANT -->
+      <div class="restaurant--img">
+        <img
+          src="public/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+          alt=""
+        />
+      </div>
+      <div class="restaurant--background">
+        <div class="restaurant--form">
+          <div class="bloc">
+            <h1 class="menu--title">
+              Le delice des sens
+              <div class="heart">
+                <i class="far fa-heart"></i>
+                <div class="heart-anim"></div>
+              </div>
+            </h1>
+            <!-- ENTREE -->
+            <section class="menu">
+              <h2 class="menu--subtitle">ENTRÉES</h2>
+              <div class="menu_choix anim-1">
+                <div class="menu_choix--bloc">
+                  <h3 class="menu_choix--title">Tartare de thon</h3>
+                  <p class="menu_choix--subtitle">Assaisonné au yuzu</p>
+                </div>
+                <p class="menu_choix--price">25€</p>
+                <div class="menu_choix--anim">
+                  <i class="menu_choix--check fas fa-check-circle"></i>
+                </div>
+              </div>
+              <div class="menu_choix anim-2">
+                <div class="menu_choix--bloc">
+                  <h3 class="menu_choix--title">
+                    Bouché de homard croustillant
+                  </h3>
+                  <p class="menu_choix--subtitle">
+                    Et sa farandole de petits légumes
+                  </p>
+                </div>
+                <p class="menu_choix--price">35€</p>
+                <div class="menu_choix--anim">
+                  <i class="menu_choix--check fas fa-check-circle"></i>
+                </div>
+              </div>
+              <div class="menu_choix anim-3">
+                <div class="menu_choix--bloc">
+                  <h3 class="menu_choix--title">Velouté de cèpes</h3>
+                  <p class="menu_choix--subtitle">Aux truffes</p>
+                </div>
+                <p class="menu_choix--price">20€</p>
+                <div class="menu_choix--anim">
+                  <i class="menu_choix--check fas fa-check-circle"></i>
+                </div>
+              </div>
+            </section>
+            <!-- PLATS -->
+            <section class="menu">
+              <h2 class="menu--subtitle">PLATS</h2>
+              <div class="menu_choix anim-4">
+                <div class="menu_choix--bloc">
+                  <h3 class="menu_choix--title">
+                    Poulet rôti aux herbes de provence
+                  </h3>
+                  <p class="menu_choix--subtitle">Et sa crème de truffe</p>
+                </div>
+                <p class="menu_choix--price">40€</p>
+                <div class="menu_choix--anim">
+                  <i class="menu_choix--check fas fa-check-circle"></i>
+                </div>
+              </div>
+              <div class="menu_choix anim-5">
+                <div class="menu_choix--bloc">
+                  <h3 class="menu_choix--title">Langouste rôtie</h3>
+                  <p class="menu_choix--subtitle">Et ses légumes de saison</p>
+                </div>
+                <p class="menu_choix--price">35€</p>
+                <div class="menu_choix--anim">
+                  <i class="menu_choix--check fas fa-check-circle"></i>
+                </div>
+              </div>
+              <div class="menu_choix anim-6">
+                <div class="menu_choix--bloc">
+                  <h3 class="menu_choix--title">Côte de boeuf angus</h3>
+                  <p class="menu_choix--subtitle">Et sa purée de panais</p>
+                </div>
+                <p class="menu_choix--price">44€</p>
+                <div class="menu_choix--anim">
+                  <i class="menu_choix--check fas fa-check-circle"></i>
+                </div>
+              </div>
+            </section>
+            <!-- DESSERTS -->
+            <section class="menu">
+              <h2 class="menu--subtitle">DESSERTS</h2>
+              <div class="menu_choix anim-7">
+                <div class="menu_choix--bloc">
+                  <h3 class="menu_choix--title">Farandole de desserts</h3>
+                  <p class="menu_choix--subtitle">Du chef</p>
+                </div>
+                <p class="menu_choix--price">18€</p>
+                <div class="menu_choix--anim">
+                  <i class="menu_choix--check fas fa-check-circle"></i>
+                </div>
+              </div>
+              <div class="menu_choix anim-8">
+                <div class="menu_choix--bloc">
+                  <h3 class="menu_choix--title">Crèmes brulée</h3>
+                  <p class="menu_choix--subtitle">Revisitée</p>
+                </div>
+                <p class="menu_choix--price">22€</p>
+                <div class="menu_choix--anim">
+                  <i class="menu_choix--check fas fa-check-circle"></i>
+                </div>
+              </div>
+              <div class="menu_choix anim-9">
+                <div class="menu_choix--bloc">
+                  <h3 class="menu_choix--title">Tiramisu</h3>
+                  <p class="menu_choix--subtitle">A la noisette</p>
+                </div>
+                <p class="menu_choix--price">23€</p>
+                <div class="menu_choix--anim">
+                  <i class="menu_choix--check fas fa-check-circle"></i>
+                </div>
+              </div>
+            </section>
+          </div>
+          <button class="restaurant--btn btn">Commander</button>
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer--background">
+      <section class="footer bloc footer--menu">
+        <h2 class="footer--title">ohmyfood</h2>
+        <ul class="footer_ul">
+          <li class="footer_li">
+            <span class="footer_li--ico"><i class="fas fa-utensils"></i></span>
+            <p class="footer_li--title">Proposer un restaurant</p>
+          </li>
+          <li class="footer_li">
+            <span class="footer_li--ico"
+              ><i class="fas fa-hands-helping"></i
+            ></span>
+            <p class="footer_li--title">Devenir partenaire</p>
+          </li>
+          <li class="footer_li">
+            <p>Mentions légales</p>
+          </li>
+          <li class="footer_li">
+            <p>Contact</p>
+          </li>
+        </ul>
+      </section>
+    </footer>
+  </body>
 </html>

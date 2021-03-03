@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  max-width: 400px;
+
   margin: auto;
 }
 .bloc {
@@ -8,19 +8,25 @@ body {
   margin: auto;
 }
 
-.btn {
-  font-size: 18px;
-  color: white;
-  padding: 15px 30px;
-  border-radius: 50px;
-  box-shadow: 0px 5px 5px #7c7a7a4d;
-  border: 0;
-  transition: all 0.3s;
-  background: linear-gradient($colour-secondary, $colour-primary);
+@mixin pseudo-element($size: 100%, $t: 0, $r: 0, $l: 0, $b: 0) {
+  content: "";
+  width: $size;
+  height: $size;
 
-  &:hover{
-    filter: brightness(1.1);
-    box-shadow: 0px 10px 10px #7c7a7a4d;
-  }
+  position: absolute;
+  top: $t;
+  right: $r;
+  left: $l;
+  bottom: $b;
 }
 
+@mixin font($s, $w) {
+  font-size: $s;
+  font-weight: $w;
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
