@@ -1,62 +1,62 @@
 // ANIMATION MENU DEVOILEMENT
-@keyframes anim-menu{
-    from{
-        opacity: 0;
-        transform: translateY(50%);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0%);
-    }
+@keyframes anim-menu {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 @for $i from 1 through 9 {
-    .anim-#{$i} {
-        animation: anim-menu;
-        animation-delay: #{$i / 3}s;
-        animation-duration: #{$i / 3}s;
-        animation-fill-mode: both;
-    }
+  .anim-#{$i} {
+    animation: anim-menu;
+    animation-delay: #{$i / 3}s;
+    animation-duration: #{$i / 3}s;
+    animation-fill-mode: both;
+  }
 }
 
 // ANIMATION COEUR
-.heart-anim:hover,
-.heart-anim:hover::after,
-.heart-anim:hover::before{
-    animation: heart 0.4s;
-    animation-fill-mode: both;
+.heart:hover .heart-ico {
+  opacity: 0;
 }
-.heart-anim:hover::after{
-    animation-delay: 0.2s;
+.heart:hover .heart-anim,
+.heart:hover .heart-anim::after,
+.heart:hover .heart-anim::before {
+  animation: heart 0.2s;
+  animation-fill-mode: both;
 }
-.heart-anim:hover::before{
-    animation-delay: 0.4s;
+.heart:hover .heart-anim::after {
+  animation-delay: 0.1s;
 }
-@keyframes heart{
-    from{
-
-        opacity: 0;
-    }
-    to{
-        background-color: #9356DC;
-        opacity: 1;
-    }
+.heart:hover .heart-anim::before {
+  animation-delay: 0.2s;
+}
+@keyframes heart {
+  to {
+    background-color: #9356dc;
+    opacity: 1;
+  }
 }
 
 // ANIMATION LOADER
-@keyframes loader{
-    from{
-        transform: rotate(0);
-    }to{
-        transform: rotate(-360deg);
-    }
+@keyframes loader {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
 }
-@keyframes loader-bg{
-    0%{
-        opacity: 1;
-        z-index: 1;
-    }
-    100%{
-        opacity: 0;
-        z-index: -1;
-    }
+@keyframes loader-bg {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
 }

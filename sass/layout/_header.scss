@@ -1,9 +1,11 @@
 .header {
+  text-align: center;
+  background-color: white;
+}
+.header-fixed {
   position: sticky;
   top: 0;
   z-index: 1;
-  text-align: center;
-  background-color: white;
 }
 .header_logo {
   padding: 15px 0 15px 0;
