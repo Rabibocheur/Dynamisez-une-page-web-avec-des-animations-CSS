@@ -2,15 +2,18 @@
   @extend %flex-center;
 }
 .heart-ico {
-  font-size: 25px;
+  font-size: 24px;
   transition: 1.1s;
+}
+.heart:hover .heart-ico {
+  opacity: 0;
 }
 .heart-anim {
   position: relative;
-  left: -19px;
+  left: -18px;
   top: 1px;
-  width: 12px;
-  height: 12px;
+  width: 11px;
+  height: 11px;
   transform: rotate(45deg);
   cursor: pointer;
 }

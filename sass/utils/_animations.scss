@@ -19,9 +19,6 @@
 }
 
 // ANIMATION COEUR
-.heart:hover .heart-ico {
-  opacity: 0;
-}
 .heart:hover .heart-anim,
 .heart:hover .heart-anim::after,
 .heart:hover .heart-anim::before {
