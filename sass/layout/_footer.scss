@@ -8,10 +8,10 @@
   &--title {
     font-size: 20px;
   }
-  &_ul {
+  &__listings {
     margin-top: 20px;
   }
-  &_li {
+  &__listing {
     margin-top: 10px;
     font-size: 16px;
     position: relative;
@@ -21,7 +21,7 @@
       bottom: 2px;
       font-size: 14px;
     }
-    &--title {
+    &--ico-title {
       margin-left: 25px;
     }
   }

@@ -1,14 +1,14 @@
 .heart {
   @extend %flex-center;
 }
-.heart-ico {
+.heart--ico {
   font-size: 24px;
   transition: 1.1s;
 }
-.heart:hover .heart-ico {
+.heart:hover .heart--ico {
   opacity: 0;
 }
-.heart-anim {
+.heart--anim {
   position: relative;
   left: -18px;
   top: 1px;
@@ -17,11 +17,16 @@
   transform: rotate(45deg);
   cursor: pointer;
 }
-.heart-anim::before {
+.heart--anim::before {
   @include pseudo-element($t: -60%);
   border-radius: 50%;
 }
-.heart-anim:after {
+.heart--anim:after {
   @include pseudo-element($l: -60%);
   border-radius: 50%;
+}
+.heart--p {
+  position: absolute;
+  right: 0;
+  top: 10px;
 }

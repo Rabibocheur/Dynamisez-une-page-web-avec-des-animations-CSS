@@ -30,12 +30,12 @@
   padding: 50px 0;
   counter-reset: compteListe;
 
-  &_listings {
+  &__listings {
     display: flex;
     flex-wrap: wrap;
     margin-left: 10px;
   }
-  &_listing {
+  &__listing {
     @include font($s: 16px, $w: 500);
     display: flex;
     justify-content: space-between;
@@ -74,29 +74,29 @@
     }
   }
 }
-.listing_active {
+.listing__active {
   background-color: #9256dc18;
 
-  &-ico {
+  &--ico {
     color: $colour-primary;
   }
 }
 @media screen and (min-width: 450px) {
   .operation {
-    &_listings {
+    &__listings {
       justify-content: center;
     }
-    &_listing {
+    &__listing {
       width: 70%;
     }
   }
 }
 @media screen and (min-width: 1000px) {
   .operation {
-    &_listings {
+    &__listings {
       justify-content: space-between;
     }
-    &_listing {
+    &__listing {
       width: 30%;
     }
   }
@@ -110,7 +110,7 @@
   justify-content: space-between;
   padding: 50px 0;
 
-  &_menu {
+  &__menu {
     margin-top: 20px;
     border-radius: 15px;
     background-color: white;
@@ -118,17 +118,6 @@
     width: 100%;
     position: relative;
 
-    &_new {
-      position: absolute;
-      right: 20px;
-      top: 20px;
-      background-color: #99e2d0;
-      color: #008766;
-      z-index: 1;
-      padding: 7px;
-      @include font($s: 16px, $w: 500);
-      border-radius: 2px;
-    }
     &--img {
       object-fit: cover;
       width: 100%;
@@ -139,8 +128,18 @@
     &--img:hover {
       filter: contrast(150%);
     }
-
-    &_desc {
+    &__new {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background-color: #99e2d0;
+      color: #008766;
+      z-index: 1;
+      padding: 7px;
+      @include font($s: 16px, $w: 500);
+      border-radius: 2px;
+    }
+    &__desc {
       padding: 15px;
       position: relative;
 
@@ -159,17 +158,12 @@
   .restaurants--title {
     width: 100%;
   }
-  .restaurants_menu {
+  .restaurants__menu {
     width: 45%;
   }
 }
 @media screen and (min-width: 1200px) {
-  .restaurants_menu--img {
+  .restaurants__menu--img {
     height: 200px;
   }
-}
-.heart-p {
-  position: absolute;
-  right: 0;
-  top: 10px;
 }

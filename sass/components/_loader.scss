@@ -1,4 +1,4 @@
-.loader-bg {
+.loader {
   position: fixed;
   top: 0;
   left: 0;
@@ -12,7 +12,7 @@
   animation-delay: 0.9s;
   animation-fill-mode: both;
 }
-.loader-bg:after {
+.loader::after {
   @include pseudo-element($size: 100px, $t: 50%, $l: 50%);
   margin-left: -50px;
   margin-top: -50px;

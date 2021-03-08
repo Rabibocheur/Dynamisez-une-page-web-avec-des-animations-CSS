@@ -2,12 +2,12 @@
   text-align: center;
   background-color: white;
 }
-.header-fixed {
+.header--fixed {
   position: sticky;
   top: 0;
   z-index: 1;
 }
-.header_logo {
+.header__logo {
   padding: 15px 0 15px 0;
   margin-bottom: 1px;
   box-shadow: 0px 5px 5px #7c7a7a4d;
@@ -16,7 +16,7 @@
     transform: scale(0.8);
   }
 }
-.header_logo {
+.header__logo {
   @extend %flex-center;
   position: relative;
 

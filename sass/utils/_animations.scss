@@ -19,16 +19,16 @@
 }
 
 // ANIMATION COEUR
-.heart:hover .heart-anim,
-.heart:hover .heart-anim::after,
-.heart:hover .heart-anim::before {
+.heart:hover .heart--anim,
+.heart:hover .heart--anim::after,
+.heart:hover .heart--anim::before {
   animation: heart 0.2s;
   animation-fill-mode: both;
 }
-.heart:hover .heart-anim::after {
+.heart:hover .heart--anim::after {
   animation-delay: 0.1s;
 }
-.heart:hover .heart-anim::before {
+.heart:hover .heart--anim::before {
   animation-delay: 0.2s;
 }
 @keyframes heart {

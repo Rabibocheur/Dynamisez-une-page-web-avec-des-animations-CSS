@@ -1,16 +1,22 @@
-.restaurant--background {
-  background-color: rgb(245, 245, 245);
-}
+.restaurant {
+  &--background {
+    background-color: rgb(245, 245, 245);
+  }
+  &--form {
+    @extend .restaurant--background;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    border-radius: 50px 50px 0 0;
 
-.restaurant--form {
-  @extend .restaurant--background;
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px;
-  border-radius: 50px 50px 0 0;
-
-  position: relative;
-  top: -70px;
+    position: relative;
+    top: -70px;
+  }
+  &--title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 26px;
+  }
 }
 @media screen and (min-width: 1000px) {
   .restaurant--background {
@@ -30,18 +36,6 @@
   }
 }
 
-.restaurant--btn {
-  margin-top: 50px;
-  width: 200px;
-  align-self: center;
-}
-
-.menu--title {
-  display: flex;
-  justify-content: space-between;
-  font-size: 26px;
-}
-
 .menu {
   margin-top: 25px;
 
@@ -54,7 +48,7 @@
       background-color: $colour-tertiary;
     }
   }
-  &_choix {
+  &__choix {
     display: flex;
     justify-content: space-between;
 
@@ -67,48 +61,50 @@
     display: hidden;
     overflow: hidden;
 
-    &--bloc {
+    &__desc {
       overflow: hidden;
       white-space: nowrap;
       width: 100%;
-    }
-    &--title {
-      @include font($s: 16px, $w: 500);
-      margin-bottom: 5px;
-    }
-    &--subtitle {
-      @include font($s: 14px, $w: 300);
-      text-overflow: ellipsis;
-      overflow: hidden;
-    }
-    &--price {
-      align-self: flex-end;
-      display: flex;
-      justify-content: flex-end;
 
-      width: 40px;
-      margin-right: 30px;
-    }
-    &--anim {
-      @extend %flex-center;
-      width: 80px;
-      margin: -10px;
-      margin-right: -90px;
+      &--title {
+        @include font($s: 16px, $w: 500);
+        margin-bottom: 5px;
+      }
+      &--subtitle {
+        @include font($s: 14px, $w: 300);
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      &--price {
+        align-self: flex-end;
+        display: flex;
+        justify-content: flex-end;
 
-      background-color: $colour-tertiary;
-      border-radius: 0 20px 20px 0;
-      transition: 0.5s;
+        width: 40px;
+        margin-right: 30px;
+      }
+      &--anim {
+        @extend %flex-center;
+        width: 80px;
+        margin: -10px;
+        margin-right: -90px;
+
+        background-color: $colour-tertiary;
+        border-radius: 0 20px 20px 0;
+        transition: 0.5s;
+      }
+      &--check {
+        font-size: 25px;
+        color: white;
+        transform: rotate(180deg);
+        transition: 0.5s;
+      }
     }
-    &--check {
-      font-size: 25px;
-      color: white;
-      transform: rotate(180deg);
-      transition: 0.5s;
-    }
-    &:hover &--anim {
+
+    &:hover &__desc--anim {
       margin-right: -10px;
     }
-    &:hover &--check {
+    &:hover &__desc--check {
       transform: rotate(0);
     }
   }

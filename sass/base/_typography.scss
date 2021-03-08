@@ -5,17 +5,16 @@
   font-family: "Roboto", sans-serif;
 }
 .home--title {
-  font-size: 24px;
-  font-weight: 500;
+  @include font($s: 24px, $w: 500);
 }
 .footer--title,
-.menu--title {
+.restaurant--title {
   font-family: "Shrikhand", sans-serif;
+}
+.menu--subtitle {
+  font-weight: 300;
 }
 a {
   text-decoration: none;
   color: black;
-}
-.menu--subtitle {
-  font-weight: 300;
 }

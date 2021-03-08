@@ -14,12 +14,12 @@
 
   <body>
     <!-- HEADER -->
-    <header class="header header-fixed">
-      <div class="header_logo">
-        <a class="header_logo--arrow" href="index.html">
+    <header class="header header--fixed">
+      <div class="header__logo">
+        <a class="header__logo--arrow" href="index.html">
           <i class="fas fa-arrow-left"></i>
         </a>
-        <img src="public/logo/ohmyfood.svg" alt="logo ohmyfood" />
+        <img src="public/images/logo/ohmyfood.svg" alt="logo ohmyfood" />
       </div>
     </header>
     <!-- MAIN -->
@@ -27,129 +27,145 @@
       <!-- IMG RESTAURANT -->
       <img
         class="restaurant--img"
-        src="public/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-        alt=""
+        src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+        alt="image menu A la française"
       />
       <div class="restaurant--background">
         <div class="restaurant--form">
           <div class="bloc">
-            <h1 class="menu--title">
+            <h1 class="restaurant--title">
               A la française
-              <div class="heart">
-                <i class="heart-ico far fa-heart"></i>
-                <div class="heart-anim"></div>
-              </div>
+              <span class="heart">
+                <i class="heart--ico far fa-heart"></i>
+                <span class="heart--anim"></span>
+              </span>
             </h1>
             <!-- ENTREE -->
             <section class="menu">
               <h2 class="menu--subtitle">ENTRÉES</h2>
 
-              <div class="menu_choix anim-1">
-                <div class="menu_choix--bloc">
-                  <h3 class="menu_choix--title">Tartare de poulpes acidulé</h3>
-                  <p class="menu_choix--subtitle">Aux zests d'orange</p>
+              <div class="menu__choix anim-1">
+                <div class="menu__choix__desc">
+                  <h3 class="menu__choix__desc--title">
+                    Tartare de poulpes acidulé
+                  </h3>
+                  <p class="menu__choix__descmenu__choix__desc--subtitle">
+                    Aux zests d'orange
+                  </p>
                 </div>
-                <p class="menu_choix--price">25€</p>
-                <div class="menu_choix--anim">
-                  <i class="menu_choix--check fas fa-check-circle"></i>
+                <p class="menu__choix__desc--price">25€</p>
+                <div class="menu__choix__desc--anim">
+                  <i class="menu__choix__desc--check fas fa-check-circle"></i>
                 </div>
               </div>
-              <div class="menu_choix anim-2">
-                <div class="menu_choix--bloc">
-                  <h3 class="menu_choix--title">Velouté de légumes d'antan</h3>
-                  <p class="menu_choix--subtitle">
+              <div class="menu__choix anim-2">
+                <div class="menu__choix__desc">
+                  <h3 class="menu__choix__desc--title">
+                    Velouté de légumes d'antan
+                  </h3>
+                  <p class="menu__choix__desc--subtitle">
                     Carrotte, panais, topinanbour
                   </p>
                 </div>
-                <p class="menu_choix--price">35€</p>
-                <div class="menu_choix--anim">
-                  <i class="menu_choix--check fas fa-check-circle"></i>
+                <p class="menu__choix__desc--price">35€</p>
+                <div class="menu__choix__desc--anim">
+                  <i class="menu__choix__desc--check fas fa-check-circle"></i>
                 </div>
               </div>
-              <div class="menu_choix anim-3">
-                <div class="menu_choix--bloc">
-                  <h3 class="menu_choix--title">Soupe à l'oignon</h3>
-                  <p class="menu_choix--subtitle">Revisitée</p>
+              <div class="menu__choix anim-3">
+                <div class="menu__choix__desc">
+                  <h3 class="menu__choix__desc--title">Soupe à l'oignon</h3>
+                  <p class="menu__choix__desc--subtitle">Revisitée</p>
                 </div>
-                <p class="menu_choix--price">20€</p>
-                <div class="menu_choix--anim">
-                  <i class="menu_choix--check fas fa-check-circle"></i>
+                <p class="menu__choix__desc--price">20€</p>
+                <div class="menu__choix__desc--anim">
+                  <i class="menu__choix__desc--check fas fa-check-circle"></i>
                 </div>
               </div>
             </section>
             <!-- PLATS -->
             <section class="menu">
               <h2 class="menu--subtitle">PLATS</h2>
-              <div class="menu_choix anim-4">
-                <div class="menu_choix--bloc">
-                  <h3 class="menu_choix--title">Coquilles Saint-Jacques</h3>
-                  <p class="menu_choix--subtitle">
+              <div class="menu__choix anim-4">
+                <div class="menu__choix__desc">
+                  <h3 class="menu__choix__desc--title">
+                    Coquilles Saint-Jacques
+                  </h3>
+                  <p class="menu__choix__desc--subtitle">
                     Accompagnées d'une purée de panais
                   </p>
                 </div>
-                <p class="menu_choix--price">40€</p>
-                <div class="menu_choix--anim">
-                  <i class="menu_choix--check fas fa-check-circle"></i>
+                <p class="menu__choix__desc--price">40€</p>
+                <div class="menu__choix__desc--anim">
+                  <i class="menu__choix__desc--check fas fa-check-circle"></i>
                 </div>
               </div>
-              <div class="menu_choix anim-5">
-                <div class="menu_choix--bloc">
-                  <h3 class="menu_choix--title">Magret de canard</h3>
-                  <p class="menu_choix--subtitle">
+              <div class="menu__choix anim-5">
+                <div class="menu__choix__desc">
+                  <h3 class="menu__choix__desc--title">Magret de canard</h3>
+                  <p class="menu__choix__desc--subtitle">
                     Et parmentier de pomme de terres
                   </p>
                 </div>
-                <p class="menu_choix--price">35€</p>
-                <div class="menu_choix--anim">
-                  <i class="menu_choix--check fas fa-check-circle"></i>
+                <p class="menu__choix__desc--price">35€</p>
+                <div class="menu__choix__desc--anim">
+                  <i class="menu__choix__desc--check fas fa-check-circle"></i>
                 </div>
               </div>
-              <div class="menu_choix anim-6">
-                <div class="menu_choix--bloc">
-                  <h3 class="menu_choix--title">
+              <div class="menu__choix anim-6">
+                <div class="menu__choix__desc">
+                  <h3 class="menu__choix__desc--title">
                     Pigeonneau d'Ille-et-vilaine
                   </h3>
-                  <p class="menu_choix--subtitle">
+                  <p class="menu__choix__desc--subtitle">
                     Sur son lit de gnocchis aux légumes
                   </p>
                 </div>
-                <p class="menu_choix--price">44€</p>
-                <div class="menu_choix--anim">
-                  <i class="menu_choix--check fas fa-check-circle"></i>
+                <p class="menu__choix__desc--price">44€</p>
+                <div class="menu__choix__desc--anim">
+                  <i class="menu__choix__desc--check fas fa-check-circle"></i>
                 </div>
               </div>
             </section>
             <!-- DESSERTS -->
             <section class="menu">
               <h2 class="menu--subtitle">DESSERTS</h2>
-              <div class="menu_choix anim-7">
-                <div class="menu_choix--bloc">
-                  <h3 class="menu_choix--title">Pétales de violettes glacés</h3>
-                  <p class="menu_choix--subtitle">Et purée de noisettes</p>
+              <div class="menu__choix anim-7">
+                <div class="menu__choix__desc">
+                  <h3 class="menu__choix__desc--title">
+                    Pétales de violettes glacés
+                  </h3>
+                  <p class="menu__choix__desc--subtitle">
+                    Et purée de noisettes
+                  </p>
                 </div>
-                <p class="menu_choix--price">18€</p>
-                <div class="menu_choix--anim">
-                  <i class="menu_choix--check fas fa-check-circle"></i>
-                </div>
-              </div>
-              <div class="menu_choix anim-8">
-                <div class="menu_choix--bloc">
-                  <h3 class="menu_choix--title">Fondant au chocolat</h3>
-                  <p class="menu_choix--subtitle">Revisité</p>
-                </div>
-                <p class="menu_choix--price">22€</p>
-                <div class="menu_choix--anim">
-                  <i class="menu_choix--check fas fa-check-circle"></i>
+                <p class="menu__choix__desc--price">18€</p>
+                <div class="menu__choix__desc--anim">
+                  <i class="menu__choix__desc--check fas fa-check-circle"></i>
                 </div>
               </div>
-              <div class="menu_choix anim-9">
-                <div class="menu_choix--bloc">
-                  <h3 class="menu_choix--title">Millefeuille croustillant</h3>
-                  <p class="menu_choix--subtitle">Myrtilles et pâte d'amande</p>
+              <div class="menu__choix anim-8">
+                <div class="menu__choix__desc">
+                  <h3 class="menu__choix__desc--title">Fondant au chocolat</h3>
+                  <p class="menu__choix__desc--subtitle">Revisité</p>
                 </div>
-                <p class="menu_choix--price">23€</p>
-                <div class="menu_choix--anim">
-                  <i class="menu_choix--check fas fa-check-circle"></i>
+                <p class="menu__choix__desc--price">22€</p>
+                <div class="menu__choix__desc--anim">
+                  <i class="menu__choix__desc--check fas fa-check-circle"></i>
+                </div>
+              </div>
+              <div class="menu__choix anim-9">
+                <div class="menu__choix__desc">
+                  <h3 class="menu__choix__desc--title">
+                    Millefeuille croustillant
+                  </h3>
+                  <p class="menu__choix__desc--subtitle">
+                    Myrtilles et pâte d'amande
+                  </p>
+                </div>
+                <p class="menu__choix__desc--price">23€</p>
+                <div class="menu__choix__desc--anim">
+                  <i class="menu__choix__desc--check fas fa-check-circle"></i>
                 </div>
               </div>
             </section>
@@ -160,23 +176,25 @@
     </main>
     <!-- FOOTER -->
     <footer class="footer--background">
-      <section class="footer bloc footer--menu">
+      <section class="footer bloc">
         <h2 class="footer--title">ohmyfood</h2>
-        <ul class="footer_ul">
-          <li class="footer_li">
-            <span class="footer_li--ico"><i class="fas fa-utensils"></i></span>
-            <p class="footer_li--title">Proposer un restaurant</p>
+        <ul class="footer__listings">
+          <li class="footer__listing">
+            <span class="footer__listing--ico"
+              ><i class="fas fa-utensils"></i
+            ></span>
+            <p class="footer__listing--ico-title">Proposer un restaurant</p>
           </li>
-          <li class="footer_li">
-            <span class="footer_li--ico"
+          <li class="footer__listing">
+            <span class="footer__listing--ico"
               ><i class="fas fa-hands-helping"></i
             ></span>
-            <p class="footer_li--title">Devenir partenaire</p>
+            <p class="footer__listing--ico-title">Devenir partenaire</p>
           </li>
-          <li class="footer_li">
+          <li class="footer__listing">
             <p>Mentions légales</p>
           </li>
-          <li class="footer_li">
+          <li class="footer__listing">
             <p>Contact</p>
           </li>
         </ul>
